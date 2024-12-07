@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Font';
+    src: url('/fonts/Parkinsans-VariableFont_wght.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Font', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('http://localhost:8080/CombinatoricsCalculatorr_war_exploded/images/cute.gif');
+    background-repeat: repeat;
+    background-size: 10%;
+}
+
+h1 {
+
+}
+
+.error-message p {
+    color: red;
+    background-color: aliceblue;
+    margin: 2vw;
+    border-radius: 30px;
+}
+
+.content {
+    width: 60vw;
+    background-color: #ffe2eb;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3vw;
+    height: 10000vh;
+}
+
+form {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 2vw;
+    border-radius: 30px;
+}
+
+img {
+    width: 22vw;
+    border-radius: 30px;
+    box-shadow: 0 0 80px #FF5185FF;
+    margin: 3vw;
+}
+
+.container-for-buttons {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.container-for-buttons > * {
+    margin: 1vw;
+}
+
+.container-for-inputs {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+input {
+    margin: 0.4vw;
+}
+
+input[type=checkbox] {
+    scale: 2;
+}
+
+input:focus {
+    outline-color: #FF5185FF;
+}
+
+.button {
+    background-color: #FF5185FF;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    padding: 1vw;
+    cursor: pointer;
+    width: 15vw;
+    text-align: center;
+}
+
+a {
+    color: #FF5185FF;
+    background-color: white;
+    border-radius: 30px;
+    padding: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin: 1vw;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+}
