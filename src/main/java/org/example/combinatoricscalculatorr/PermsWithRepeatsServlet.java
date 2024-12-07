@@ -42,7 +42,7 @@ public class PermsWithRepeatsServlet extends HttpServlet {
         BigInteger result;
 
         if (k != parameterMap.size() - 2) {
-            request.setAttribute("error", "Error: amount of n1, n2, ..., nk you selected must = k");
+            request.setAttribute("error", "Error: amount of n1, n2, ..., nk you selected must be = k");
             getServletContext().getRequestDispatcher("/views/perms_with_repeats.jsp").forward(request, response);
         } else if (sum != n) {
             request.setAttribute("error", "Error: sum of all elements must = n");

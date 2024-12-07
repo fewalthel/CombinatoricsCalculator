@@ -1,6 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <title>Combinatorics Calculator</title>
     <link rel="stylesheet" href="styles/universal.css">
