@@ -15,13 +15,13 @@
 
     <form action="${pageContext.request.contextPath}/urn_model" method="post">
         <label for="n">Input n:</label>
-        <input type="number" id="n" name="n" min="1"><br>
+        <input type="number" id="n" name="n" min="1" required><br>
         <label for="k">Input k:</label>
-        <input type="number" id="k" name="k" min="0"><br>
+        <input type="number" id="k" name="k" min="0" required><br>
         <label for="r">Input r:</label>
-        <input type="number" id="r" name="r" min="0"><br>
+        <input type="number" id="r" name="r" min="0" required><br>
         <label for="m">Input m:</label>
-        <input type="number" id="m" name="m" min="0"><br>
+        <input type="number" id="m" name="m" min="0" required><br>
         <br>
         <input type="submit" class="button" value="Calculate">
     </form>

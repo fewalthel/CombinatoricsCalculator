@@ -21,6 +21,7 @@ public class PermsWithRepeatsServlet extends HttpServlet {
         ArrayList<Integer> perms = new ArrayList<>();
 
         Map<String, String[]> parameterMap = request.getParameterMap();
+        int cnt = 0;
         for (Map.Entry<String, String[]> entry : parameterMap.entrySet()) {
             String paramName = entry.getKey();
             String[] paramValues = entry.getValue();
@@ -30,10 +31,11 @@ public class PermsWithRepeatsServlet extends HttpServlet {
                 if (paramValues.length == 1) {
                     System.out.println(paramValues[0]);
                     int current = Integer.parseInt(paramValues[0]);
-                    if (current != n && current != k) {
+                    if (cnt >= 2) {
                         perms.add(current);
                     }
                     sum += current;
+                    cnt++;
                 }
             }
         }
@@ -49,6 +51,10 @@ public class PermsWithRepeatsServlet extends HttpServlet {
             getServletContext().getRequestDispatcher("/views/perms_with_repeats.jsp").forward(request, response);
         } else {
             result = MathFunctions.Permutations(n, perms);
+            System.out.println(n);
+            for (Integer item: perms) {
+                System.out.println(item);
+            }
             request.getSession().setAttribute("result", result);
             response.sendRedirect(getServletContext().getContextPath() + "/result");
         }
